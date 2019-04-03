@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32.SafeHandles;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace Assets.Scripts
 {
@@ -21,6 +22,7 @@ namespace Assets.Scripts
         public float fireRate;
 
         public float nextFire;
+        public AudioSource audio;
 
         void Update()
         {
@@ -28,6 +30,7 @@ namespace Assets.Scripts
             {
                 nextFire = fireRate + Time.time;
                 Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+                audio.Play();
             }
         }
         void FixedUpdate()
