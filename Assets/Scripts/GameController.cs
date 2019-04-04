@@ -1,19 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     public GameObject hazard;
+
     public Vector3 spawnValues;
+
     public int hazardCount;
+
     public float spawnWait;
     public float startWait;
     public float waveWait;
 
+    public Text scoreText;
+    private int score;
     void Start()
     {
         StartCoroutine(SpawnWaves());
+        score = 0;
+        UpdateScore();
     }
 
     IEnumerator SpawnWaves()
@@ -34,5 +42,16 @@ public class GameController : MonoBehaviour
             yield return new WaitForSeconds(waveWait);
         }
 
+    }
+
+    public void AddScore(int scoreValue)
+    {
+        score += scoreValue;
+        UpdateScore();
+    }
+
+    void UpdateScore()
+    {
+        scoreText.text = "Score " + score;
     }
 }
