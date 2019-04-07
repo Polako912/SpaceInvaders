@@ -760,7 +760,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4b70dfaede73b4f80117241abe8d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hazard: {fileID: 1163306607390960, guid: 504807b8dd78a4f44bc32d7cfdcb145d, type: 2}
+  hazards:
+  - {fileID: 1163306607390960, guid: 504807b8dd78a4f44bc32d7cfdcb145d, type: 2}
+  - {fileID: 1295173945599714, guid: 6bcdd5665e9f7e84e9c0578000b548fd, type: 2}
+  - {fileID: 1020841269551266, guid: 581501cb2c799804dbc6c7eb658756c6, type: 2}
   spawnValues: {x: 6, y: 0, z: 16}
   hazardCount: 10
   spawnWait: 0.5
@@ -769,8 +772,6 @@ MonoBehaviour:
   scoreText: {fileID: 1400327293}
   restartText: {fileID: 378427657}
   gameOverText: {fileID: 2001032427}
-  gameOver: 0
-  restart: 0
 --- !u!82 &608347633
 AudioSource:
   m_ObjectHideFlags: 0
