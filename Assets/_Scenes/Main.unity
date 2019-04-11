@@ -888,9 +888,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hazards:
-  - {fileID: 1163306607390960, guid: 504807b8dd78a4f44bc32d7cfdcb145d, type: 3}
-  - {fileID: 1295173945599714, guid: 6bcdd5665e9f7e84e9c0578000b548fd, type: 3}
-  - {fileID: 1020841269551266, guid: 581501cb2c799804dbc6c7eb658756c6, type: 3}
+  - {fileID: 6735075553411335791, guid: c845ef008293abf409809a30e1087ba4, type: 3}
+  - {fileID: 1005037137560547257, guid: c421cf3e40aa54a4d9cddebdf5716fac, type: 3}
+  - {fileID: 3063874692170077306, guid: 4ec5346f3202a5a47a9f46bbb99e5de8, type: 3}
   spawnValues: {x: 6, y: 0, z: 16}
   hazardCount: 10
   spawnWait: 0.5
@@ -925,7 +925,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a6ad54657630e4aa18830b8683d338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 2641510676378864859, guid: 11f231f9da22cae4e8821f5769b1e8a3, type: 3}
+  shot: {fileID: 7026461560188010596, guid: c3819c4c1303c934793f5a7cc39dfcbb, type: 3}
   shotSpawn: {fileID: 1885629148}
   fireRate: 1.5
   delay: 0.5
